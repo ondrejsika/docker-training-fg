@@ -165,6 +165,10 @@ EXPERIMENTAL=true docker-distribution-pruner -config=/var/opt/gitlab/registry/co
 
 [Official Docs](https://docs.docker.com/storage/volumes/)
 
+- Minio - Open Source S3 - <https://minio.io/>
+- Ceph - Distributed storage - <https://ceph.com/>
+- Plugin Example (SSHFS) - <https://github.com/vieux/docker-volume-sshfs>
+
 
 ### Mounts (host FS into container)
 
