@@ -368,6 +368,11 @@ Examples:
 Docker from Docker Gitlab Runner - <https://github.com/ondrejsika/gitlab-ci-runner>
 
 
+## Digital Ocean
+
+- Try [DigitalOcean](https://m.do.co/c/3a51a65540fd) (referral) - Give $100, Get $25
+
+
 ## Sources
 
 - Slides for my Docker Training - <https://sika.link/docker>
