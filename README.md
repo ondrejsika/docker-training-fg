@@ -153,6 +153,11 @@ docker run -d \
   registry:2
 ```
 
+### Registry for Traefik
+
+[ondrejsika/docker-registry-traefik](https://github.com/ondrejsika/docker-registry-traefik)
+
+
 ### Pruning Docker Registry
 
 Use [docker-distribution-pruner](https://gitlab.com/gitlab-org/docker-distribution-pruner) from Gitlab
