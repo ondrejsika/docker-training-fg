@@ -373,6 +373,7 @@ Docker from Docker Gitlab Runner - <https://github.com/ondrejsika/gitlab-ci-runn
 - Slides for my Docker Training - <https://sika.link/docker>
 - Docker Training Examples (repository) - <https://github.com/ondrejsika/docker-training-examples>
 - Slides for Gitlab CI Training - <https://sika.link/gitlab-ci>
+- 12 Factor Apps - <https://12factor.net/>
 
 
 ## Want more
