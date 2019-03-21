@@ -205,15 +205,15 @@ docker run --link nginx ondrejsika/curl -s nginx
 ##### Copy from conteiner
 
 ```
-docker cp nginx:/usr/share/nginx/html/index.html .
-cat index.html
+docker cp nginx:/usr/share/nginx/html/index.html /tmp/index.html
+cat /tmp/index.html
 ```
 
 ##### Copy to container
 
 ```
-echo "<h1>Hello from cp</h1>" > index.html
-docker cp index.html nginx:/usr/share/nginx/html/
+echo "<h1>Hello from cp</h1>" > /tmp/index.html
+docker cp /tmp/index.html nginx:/usr/share/nginx/html/
 docker run --link nginx ondrejsika/curl -s nginx
 ```
 
