@@ -318,15 +318,15 @@ docker rm -f pg
 
 ```
 docker build -t postgres-data-image--base examples/postgres-data-image
-docker run --name pg -d postgres-data-image--base
+docker run --name pg -d -e MYSQL_ROOT_PASSWORD=mysql postgres-data-image--base
 sleep 4
-docker exec -i -u postgres pg psql < examples/postgres-data-image/init.sql
+docker exec -i pg mysql -pmysql mysql < examples/postgres-data-image/init.sql
 docker stop pg
 docker commit pg postgres-data-image
 docker rm pg
 docker run --name pg -d postgres-data-image
 sleep 4
-docker exec -u postgres pg psql -c "select hello from hello;"
+docker exec -i pg mysql -pmysql mysql -e "select hello from hello;"
 docker rm -f pg
 ```
 
