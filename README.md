@@ -372,6 +372,10 @@ Examples:
 
 Docker from Docker Gitlab Runner - <https://github.com/ondrejsika/gitlab-ci-runner>
 
+### Example Gitlab CI Project with Docker and Traefik
+
+<https://github.com/ondrejsika/gitlab-ci-example-docker-traefik>
+
 
 ## Digital Ocean
 
