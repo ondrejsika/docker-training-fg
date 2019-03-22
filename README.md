@@ -238,7 +238,7 @@ docker exec redis redis-cli set hello 'hello world'
 docker stop redis
 
 # Backup
-docker run --rm --volumes-from redis -v $(pwd):/backup ubuntu tar cvf /backup/backup.tar /data
+docker run --rm --volumes-from redis -v /tmp/backup:/backup ubuntu tar cvf /backup/backup.tar /data
 ```
 
 #### Restore Volumes
@@ -251,7 +251,7 @@ Run new Redis
 docker create --name redis2 redis
 
 # Restore data
-docker run --rm --volumes-from redis2 -v $(pwd):/backup ubuntu bash -c "cd /data && tar xvf /backup/backup.tar --strip 1"
+docker run --rm --volumes-from redis2 -v /tmp/backup:/backup ubuntu bash -c "cd /data && tar xvf /backup/backup.tar --strip 1"
 
 docker start redis2
 
@@ -260,7 +260,7 @@ docker exec redis2 redis-cli get hello
 
 # Clean up
 docker rm -f redis redis2
-docker run --rm -v $(pwd):/backup ubuntu rm /backup/backup.tar
+docker run --rm -v /tmp/backup:/backup ubuntu rm /backup/backup.tar
 ```
 
 ### Backup, Restore & Transfer
