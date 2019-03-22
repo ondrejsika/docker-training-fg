@@ -361,6 +361,7 @@ Examples:
 [slides](https://sika.link/gitlab-ci),
 [demo gitlab](https://gitlab-demo.xsika.cz)
 
+- `ondrejsika/ci` image (for CI) - <https://github.com/ondrejsika/ondrejsika-ci-docker>
 
 ### Why Gitlab CI
 
