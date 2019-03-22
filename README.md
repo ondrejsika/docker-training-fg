@@ -362,6 +362,7 @@ Examples:
 [demo gitlab](https://gitlab-demo.xsika.cz)
 
 - `ondrejsika/ci` image (for CI) - <https://github.com/ondrejsika/ondrejsika-ci-docker>
+- JUnit Reports - <https://docs.gitlab.com/ce/ci/junit_test_reports.html>
 
 ### Why Gitlab CI
 
